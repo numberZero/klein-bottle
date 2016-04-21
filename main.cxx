@@ -100,8 +100,8 @@ Point4 makePoint(double u, double v)
 	return {
 		sin(u) * cos(v),
 		sin(u) * sin(v),
-		cos(u) + 0.33 * cos(2*v),
-		0.33 * sin(2*v),
+		cos(u) * (1.0 + 0.25 * cos(2*v)),
+		cos(u) * (0.0 + 0.25 * sin(2*v)),
 	};
 }
 
